@@ -5,21 +5,29 @@ export default [
     {
         id : "home",
         title : "Home",
-        icon: <BiHomeAlt2 size = {size}/>
+        offset : 0,
+        mobileOffset: 0,
+        icon: <BiHomeAlt2 className="z-10" size = {size}/>
     },
     {
         id : "about",
         title : "About",
-        icon: <AiOutlineHistory size = {size}/>
+        offset : 0,
+        mobileOffset: 40,
+        icon: <AiOutlineHistory className="z-10" size = {size}/>
     },
     {
         id : "projects",
         title : "Projects",
-        icon: <AiFillGithub size = {size}/>
+        offset : 0,
+        mobileOffset: 40,
+        icon: <AiFillGithub className="z-10" size = {size}/>
     },
     {
         id : "contact",
         title : "Contact",
-        icon: <AiFillMessage size = {size}/>
+        offset : -80,
+        mobileOffset: 0,
+        icon: <AiFillMessage className="z-10" size = {size}/>
     }
 ]

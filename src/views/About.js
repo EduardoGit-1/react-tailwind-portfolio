@@ -1,11 +1,11 @@
 import React from 'react'
-import ServiceItem from '../components/ServiceItem'
+import AboutCard from '../components/AboutCard'
 import services from '../data/services'
 import Timeline from '../components/Timeline'
 
 const About = () => {
   return (
-    <div id ="about" className='w-full flex flex-col items-center justify-center'>
+    <section id ="about" className='w-full flex flex-col items-center justify-center'>
         <div className='my-10 md:flex flex-col space-y-20 md:my-20 w-10/12'>
             <div className='pt-5 '>
                 <div className=''>
@@ -15,7 +15,7 @@ const About = () => {
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-16 text-white'>
                 {services.map(service =>(
-                    <ServiceItem 
+                    <AboutCard 
                         key = {service.id} 
                         title = {service.title}
                         description = {service.description}
@@ -26,11 +26,10 @@ const About = () => {
             </div>
         </div>
         <div className='w-full'>
-            {/* <Timeline/> */}
             <Timeline/>
         </div>
 
-    </div>
+    </section>
   )
 }
 

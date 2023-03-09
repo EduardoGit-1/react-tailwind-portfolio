@@ -5,19 +5,37 @@ import HeroSection from "./views/HeroSection";
 import useBodyScrollPosition from './hooks/useScrollPosition';
 import Projects from "./views/Projects";
 import Contact from "./views/Contact";
+import { useEffect, useState } from "react";
 
 const App = () =>{
   // const scrollPosition = useBodyScrollPosition();
-  // console.log(scrollPosition)
+  const [activeLinkID, setActiveLinkID] = useState('home')
+
+  useEffect(()=>{
+    let section = document.querySelectorAll('section');
+    console.log(section)
+    window.onscroll = () => {
+      section.forEach(sec => {
+          let top = window.scrollY;
+          let offset = sec.offsetTop;
+          let height = sec.offsetHeight;
+
+          if (top >= offset && top < offset + height) {
+              sec.id ? setActiveLinkID(sec.id) : setActiveLinkID('home')
+          }
+      })
+  };
+  }, [])
+
   return (
     <div id="home" className="bg-slate-900 text-white">
-      <Navbar/>
-      <NavbarMobile/>
+      <Navbar activeLinkID={activeLinkID}/>
+      <NavbarMobile activeLinkID={activeLinkID}/>
       <HeroSection/>
       <About/>
       <Projects/>
       <Contact/>
-      <div className="h-[1000px]">
+      <div className="h-[300px]">
 
       </div>
     </div>

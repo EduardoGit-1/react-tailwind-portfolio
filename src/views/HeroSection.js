@@ -1,9 +1,9 @@
-import {AiFillGithub, AiFillLinkedin, AiFillYoutube} from "react-icons/ai"
+import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
 import { gitHubURL, linkedInURL } from "../constants/socials"
 const HeroSection = () =>{
 
     return(
-        <div className="w-full flex items-center justify-center">
+        <section className="w-full flex items-center justify-center">
             <div className="text-center pt-10 md:pt-36 w-10/12">
                 <h2 className="text-5xl py-2 font-medium md:text-6xl">
                     Hi, I'm <span className="text-indigo-500 font-bold">Eduardo</span>
@@ -25,7 +25,7 @@ const HeroSection = () =>{
                     {/* <AiFillYoutube /> */}
                 </div>
             </div>
-      </div>
+      </section>
     )
 }
 
