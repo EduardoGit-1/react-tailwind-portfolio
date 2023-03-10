@@ -2,7 +2,7 @@
 import { FaCode, FaDatabase} from 'react-icons/fa';
 import {IoMdGitNetwork} from 'react-icons/io'
 
-export default [
+const backgroundData = [
     {
         id : 1,
         title : "Web Development",
@@ -22,3 +22,5 @@ export default [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eros nisl, tempor sit amet suscipit vel, fringilla ac mauris. Praesent at augue non leo bibendum viverra. Nunc ac orci vel lectus mollis sodales ac ut nunc. Vivamus id feugiat nunc. Nunc scelerisque nec tellus at auctor. Sed dignissim purus neque."
     }
 ]
+
+export default backgroundData

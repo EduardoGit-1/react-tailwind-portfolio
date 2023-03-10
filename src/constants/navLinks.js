@@ -1,7 +1,7 @@
 import {AiOutlineHistory, AiFillMessage, AiFillGithub} from 'react-icons/ai'
 import {BiHomeAlt2} from 'react-icons/bi'
 const size = 50
-export default [
+const navLinks = [
     {
         id : "home",
         title : "Home",
@@ -31,3 +31,5 @@ export default [
         icon: <AiFillMessage className="z-10" size = {size}/>
     }
 ]
+
+export default navLinks

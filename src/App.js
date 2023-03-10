@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import NavbarMobile from "./components/NavBarMobile";
 import About from "./views/About";
 import HeroSection from "./views/HeroSection";
-import useBodyScrollPosition from './hooks/useScrollPosition';
+// import useBodyScrollPosition from './hooks/useScrollPosition';
 import Projects from "./views/Projects";
 import Contact from "./views/Contact";
 import { useEffect, useState } from "react";
@@ -10,7 +10,6 @@ import { useEffect, useState } from "react";
 const App = () =>{
   // const scrollPosition = useBodyScrollPosition();
   const [activeLinkID, setActiveLinkID] = useState('home')
-
   useEffect(()=>{
     let section = document.querySelectorAll('section');
     console.log(section)
@@ -29,13 +28,14 @@ const App = () =>{
 
   return (
     <div id="home" className="bg-slate-900 text-white">
+      
       <Navbar activeLinkID={activeLinkID}/>
       <NavbarMobile activeLinkID={activeLinkID}/>
       <HeroSection/>
       <About/>
       <Projects/>
       <Contact/>
-      <div className="h-[300px]">
+      <div className="h-[350px]">
 
       </div>
     </div>

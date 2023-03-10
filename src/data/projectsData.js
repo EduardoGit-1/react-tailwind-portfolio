@@ -9,7 +9,7 @@ import {DiCss3} from "react-icons/di"
 import {TbSoup} from "react-icons/tb"
 
 const size = "16px"
-export default [
+const projectsData = [
     {
         title : "DL-based algorithm for violence detection in audio data",
         gitURL: "https://github.com/EduardoGit-1/DL-based-algorithm-for-violence-detection-in-audio-data",
@@ -100,3 +100,5 @@ export default [
 
 
 ]
+
+export default projectsData

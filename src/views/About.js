@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutCard from '../components/AboutCard'
-import services from '../data/services'
+import backgroundData from '../data/backgroundData'
 import Timeline from '../components/Timeline'
 
 const About = () => {
@@ -14,12 +14,12 @@ const About = () => {
                 </div>
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-16 text-white'>
-                {services.map(service =>(
+                {backgroundData.map(item =>(
                     <AboutCard 
-                        key = {service.id} 
-                        title = {service.title}
-                        description = {service.description}
-                        icon = {service.icon}
+                        key = {item.id} 
+                        title = {item.title}
+                        description = {item.description}
+                        icon = {item.icon}
                         />
                     ))
                 }

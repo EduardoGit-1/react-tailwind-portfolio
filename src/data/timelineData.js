@@ -2,7 +2,7 @@
 import eumLogo from '../assets/EEUMLOGO.png'
 import boschLogo from '../assets/bosch.png'
 
-export default [
+const timelineData = [
     {
         title : "Bachelor's Degree",
         subTitle: "University of Minho",
@@ -25,3 +25,5 @@ export default [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eros nisl, tempor sit amet suscipit vel, fringilla ac mauris. Praesent at augue non leo bibendum viverra. Nunc ac orci vel lectus mollis sodales ac ut nunc. Vivamus id feugiat nunc. Nunc scelerisque nec tellus at auctor. Sed dignissim purus neque."
     }
 ]
+
+export default timelineData

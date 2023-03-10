@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
 import navLinks from '../constants/navLinks'
 const NavbarMobile = ({activeLinkID}) => {
-    const size = 50
     const handleNavClick = (id, offset) => {
         const element = document.getElementById(id);
         const y = element.getBoundingClientRect().top + window.pageYOffset + offset
@@ -13,7 +11,7 @@ const NavbarMobile = ({activeLinkID}) => {
                 {
                     navLinks.map((link, index) => (
                          <button className={`flex relative items-center justify-center`} onClick = {() => handleNavClick(link.id, link.mobileOffset)}>
-                            <div className={`absolute rounded-full bg-indigo-600 ${(activeLinkID == link.id) ? 'w-[60px] h-[60px]':'w-0 h-0'} transition-size duration-300 ease-in-out `}></div>
+                            <div className={`absolute rounded-full bg-indigo-600 ${(activeLinkID === link.id) ? 'w-[60px] h-[60px]':'w-0 h-0'} transition-size duration-300 ease-in-out `}></div>
                             {link.icon}
                         </button>
                         ))

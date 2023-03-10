@@ -19,7 +19,8 @@ module.exports = {
         'spacing': 'margin, padding',
         'width': 'width',
         'size' : 'width, height',
-      }
+      },
+
     },
   },
   plugins: [
