@@ -1,4 +1,5 @@
-import navLinks from '../constants/navLinks'
+import navLinks from '../context/constants/navLinks'
+
 const NavbarMobile = ({activeLinkID}) => {
     const handleNavClick = (id, offset) => {
         const element = document.getElementById(id);

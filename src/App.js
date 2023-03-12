@@ -12,7 +12,6 @@ const App = () =>{
   const [activeLinkID, setActiveLinkID] = useState('home')
   useEffect(()=>{
     let section = document.querySelectorAll('section');
-    console.log(section)
     window.onscroll = () => {
       section.forEach(sec => {
           let top = window.scrollY;
@@ -35,7 +34,7 @@ const App = () =>{
       <About/>
       <Projects/>
       <Contact/>
-      <div className="h-[350px]">
+      <div className="h-[400px]">
 
       </div>
     </div>

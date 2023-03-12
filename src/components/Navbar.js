@@ -1,4 +1,4 @@
-import navLinks from '../constants/navLinks'
+import navLinks from '../context/constants/navLinks'
 
 const Navbar = ({activeLinkID}) => {
     const handleNav = (id, offset) => {

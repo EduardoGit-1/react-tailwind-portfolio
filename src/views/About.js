@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutCard from '../components/AboutCard'
-import backgroundData from '../data/backgroundData'
+import backgroundData from '../context/data/backgroundData'
 import Timeline from '../components/Timeline'
 
 const About = () => {

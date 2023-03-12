@@ -1,5 +1,5 @@
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
-import { gitHubURL, linkedInURL } from "../constants/socials"
+import { gitHubURL, linkedInURL } from "../context/constants/socials"
 const HeroSection = () =>{
 
     return(
@@ -12,7 +12,7 @@ const HeroSection = () =>{
                     Full-Stack Developer
                 </h3>
                 <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-                    I'm a recent master's degree graduate with a deep interest in Web Development and Machine Learning. Join me bellow and let's start talking!
+                    I'm a recent master's degree graduate who enjoys Web Development and Machine Learning. Feel free to to join me bellow and send me a message!
                 </p>
                 <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
                     <div className = "cursor-pointer" onClick={() => window.open(gitHubURL, '_blank')}>
