@@ -79,7 +79,7 @@ const projectsData = [
         title : "Amazon Scrapper",
         gitURL: "https://github.com/EduardoGit-1/amazon-eu-scrapper",
         websiteURL : null,
-        description : "The Amazon Scrapper was the follow-up scrapping project that I did. As in the Ebay Scrapper script, it also allows to fully custumize all the parameters, searching the deseried products in all European Amazon Websites. It also uses fuzzy word matching in order to filter unwanted items.",
+        description : "The Amazon Scrapper was the follow-up scrapping project that I did. As in the Ebay Scrapper script, it also allows to fully customize all the parameters, searching the deseried products in all European Amazon Websites. It also uses fuzzy word matching in order to filter unwanted items.",
         img :amazonScrapperLogo,
         languages:[
             {

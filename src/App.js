@@ -7,6 +7,7 @@ import Projects from "./views/Projects";
 import Contact from "./views/Contact";
 import { useEffect, useState } from "react";
 
+
 const App = () =>{
   // const scrollPosition = useBodyScrollPosition();
   const [activeLinkID, setActiveLinkID] = useState('home')
@@ -27,7 +28,6 @@ const App = () =>{
 
   return (
     <div id="home" className="bg-slate-900 text-white">
-      
       <Navbar activeLinkID={activeLinkID}/>
       <NavbarMobile activeLinkID={activeLinkID}/>
       <HeroSection/>

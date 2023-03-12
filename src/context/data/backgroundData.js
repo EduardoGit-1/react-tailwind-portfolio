@@ -7,13 +7,13 @@ const backgroundData = [
         id : 1,
         title : "Web Development",
         icon :<FaCode size = {30}/>,
-        description: "In 2017 I had my first experience with Web Development. For me, it's clearly the most enjoyable tech area since it allows to express creativity through the design of visually and functionally appealing websites. It is also a constantly evolving field, with new tools, techniques and technologies emerging all the time which allows for an enjoyable and tangible way of learning since it's easy to see your results."
+        description: "In 2017 I had my first experience with Web Development. For me, it's clearly the most enjoyable tech area since it allows to express our creativity through the design of visually and functionally appealing websites. It is also a constantly evolving field, with tools, techniques and technologies emerging all the time which converges on an enjoyable and tangible way of learning since it's easy to see your results."
     },
     {
         id : 2,
         title : "Machine Learning",
         icon : <IoMdGitNetwork size = {30}/>,
-        description: "Machine Learning is a cutting-edge field that has the potential to be applied in a wide range of industries which is why it makes it so interesting. During my academic and professional experience I developed multiple Machine Learning models with different use cases which allowed me to understand the vast scope that this piece of technology has, and how impactfull can it be at a economic and social level."
+        description: "Machine Learning is a cutting-edge field that has the potential to be applied in a wide range of industries, which is why it makes it so interesting. During my academic and professional experience I developed multiple Machine Learning models, with different use cases, which allowed me to understand the vast scope that this piece of technology has, and how impactfull it can be at an economic and social level."
     },
     {
         id : 3,

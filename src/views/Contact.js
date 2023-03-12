@@ -1,14 +1,14 @@
 import contactInfo from "../context/constants/contactInfo";
-import ContactForm from "../components/ContactForm";
 import ClipboardButton from "../components/ClipboardButton";
 import { useState, useReducer} from "react";
 import messageReducer from "../context/reducer/messageReducer";
 import postMessage from "../context/actions/contact/postMessage";
 import PayloadDiv from "../components/PayloadDiv";
-
+import { useForm } from "react-hook-form";
+import ContactForm from "../components/ContactForm";
 const Contact = () => {
     const [activeClipboard, setActiveClipboard] = useState("")
-    const [messageData, setMessageData] = useState({message:"", email:"", name:""})
+    const { register, handleSubmit, formState:{errors}} = useForm();
     const [postMessageState, messageDispatch] = useReducer(messageReducer, {data: null, error: false, info:false, loading: false})
     const [showModal, setShowModal] = useState(false)
     const handleModalClose = () =>{
@@ -20,15 +20,10 @@ const Contact = () => {
             })
         }, 150)
     }
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
-        postMessage(messageData, setShowModal)(messageDispatch)
+    const handleSubmitForm = (formData) => {
+        postMessage(formData, setShowModal)(messageDispatch)
     }
-    const handleFormChange = (e) => {
-        let key = e.target.name 
-        setMessageData({...messageData, [key]: e.target.value,});
-      };
+
     const handleContactInfoOnClick = (value) =>{
         navigator.clipboard.writeText(value)
         setActiveClipboard(value)
@@ -38,7 +33,6 @@ const Contact = () => {
     }
     const onClickFuncs = {"handleContactInfoOnClick" : handleContactInfoOnClick, "handleOpenPageOnClick": handleOpenPageOnClick}
 
-    console.log(postMessageState)
     return (
         <section id ="contact" className='w-full flex flex-col items-center justify-center'>
             <div className='my-10 md:flex flex-col space-y-20 md:my-20 w-10/12'>
@@ -69,7 +63,7 @@ const Contact = () => {
                             
                         ))}
                     </div>
-                    <ContactForm error={postMessageState.error} info={postMessageState.info} data={postMessageState.data} loading={postMessageState.loading} handleSubmit = {handleSubmit} handleFormChange= {handleFormChange} />
+                    <ContactForm postMError={postMessageState.error} info={postMessageState.info} data={postMessageState.data} loading={postMessageState.loading} handleSubmitForm = {handleSubmitForm} register ={register} handleSubmit={handleSubmit} errors = {errors}/>
                 </div>
                 <PayloadDiv error={postMessageState.error} info={postMessageState.info} data={postMessageState.data} loading={postMessageState.loading} handleModalClose = {handleModalClose} showModal = {showModal}/>
             </div>

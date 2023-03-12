@@ -11,7 +11,7 @@ const timelineData = [
         list : [
             "Development of OOP-oriented applications",
             "Web applications development following direct company requirements",
-            "Introduction to infrastructure and Machine Learning"
+            "Introduction to Infrastructure, Machine Learning and Networking"
         ],
         description: ""
     },
@@ -22,8 +22,9 @@ const timelineData = [
         img : eumLogo,
         list : [
             "Machine Learning oriented for time-series forecasting",
-            "Web applications development following direct company requirements",
-            "Introduction to infrastructure and Machine Learning"
+            "Management and Implementation of Information Systems",
+            "Strongly focused on full-scale Web Dev",
+            "Dissertation"
         ],
        
     },
@@ -33,9 +34,9 @@ const timelineData = [
         timeInterval: "Mar 2022 - Nov 2022",
         img : boschLogo,
         list : [
-            "Development of OOP-oriented applications",
-            "Web applications development following direct company requirements",
-            "Introduction to infrastructure and Machine Learning"
+            "First professional experience",
+            "Worked with the Agile SCRUM methodology",
+            "Development, implementation and comparative study of Deep Learning architectures for in-car violence detection using auditory data",
         ],
     }
 ]
