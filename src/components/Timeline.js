@@ -3,14 +3,14 @@ import timelineData from "../context/data/timelineData"
 const Timeline = () =>{
    
     return (
-        <div class="relative container mx-auto px-6 flex flex-col space-y-8 ">
+        <div class="relative mx-auto flex flex-col space-y-8 w-10/12 md:px-6">
             <div className='w-full flex flex-col justify-center items-center pb-10'>
                 <p className="sm:text-[16px] text-[14px] text-secondary uppercase tracking-wider opacity-50">A time perspective</p>
                 <h1 className='text-4xl text-indigo-500 font-bold md:text-5xl text-center'>Education and Experience.</h1>
             </div>
    
             <div
-                class="absolute z-0 w-2 h-[91%] xs:h-[85%] bg-indigo-600 shadow-md inset-0 left-17 top-[6.5rem] sm:top-[5rem] rounded-md md:mx-auto md:right-0 md:left-0"
+                class="absolute z-0 w-2 h-[92%] xs:h-[85%] bg-indigo-600 shadow-md inset-0 left-11 top-[6.5rem] sm:top-[5rem] rounded-md md:mx-auto md:right-0 md:left-0"
             ></div>
             {
                 timelineData.map((data, index) =>(

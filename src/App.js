@@ -8,6 +8,7 @@ import Contact from "./views/Contact";
 import { useEffect, useState } from "react";
 
 
+
 const App = () =>{
   // const scrollPosition = useBodyScrollPosition();
   const [activeLinkID, setActiveLinkID] = useState('home')
@@ -27,14 +28,14 @@ const App = () =>{
   }, [])
 
   return (
-    <div id="home" className="bg-slate-900 text-white">
+    <div id="home" className="bg-slate-900 text-white h-full">
       <Navbar activeLinkID={activeLinkID}/>
       <NavbarMobile activeLinkID={activeLinkID}/>
       <HeroSection/>
       <About/>
       <Projects/>
       <Contact/>
-      <div className="h-[400px]">
+      <div className="h-[30rem] htall:h-[50rem] hverytall:h-[80rem] h4k:h-[100rem]">
 
       </div>
     </div>
