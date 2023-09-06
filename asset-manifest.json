@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-tailwind-portfolio/static/css/main.f16c58cb.css",
-    "main.js": "/react-tailwind-portfolio/static/js/main.08ebb0f5.js",
+    "main.js": "/react-tailwind-portfolio/static/js/main.8032a773.js",
     "static/media/amazonScrapperLogo.png": "/react-tailwind-portfolio/static/media/amazonScrapperLogo.e9775a33ad43060c3fb2.png",
     "static/media/ebayScrapperLogo.png": "/react-tailwind-portfolio/static/media/ebayScrapperLogo.ed2496a648df11c22a33.png",
     "static/media/Logo-Bosch.png": "/react-tailwind-portfolio/static/media/Logo-Bosch.09a21b25a7f96707e17e.png",
@@ -9,10 +9,10 @@
     "static/media/weatherAppLogo.png": "/react-tailwind-portfolio/static/media/weatherAppLogo.8fafa0b8d52937546d1a.png",
     "index.html": "/react-tailwind-portfolio/index.html",
     "main.f16c58cb.css.map": "/react-tailwind-portfolio/static/css/main.f16c58cb.css.map",
-    "main.08ebb0f5.js.map": "/react-tailwind-portfolio/static/js/main.08ebb0f5.js.map"
+    "main.8032a773.js.map": "/react-tailwind-portfolio/static/js/main.8032a773.js.map"
   },
   "entrypoints": [
     "static/css/main.f16c58cb.css",
-    "static/js/main.08ebb0f5.js"
+    "static/js/main.8032a773.js"
   ]
 }
