@@ -9,7 +9,7 @@ const HeroSection = () =>{
                     Hi, I'm <span className="text-indigo-500 font-bold">Eduardo</span>
                 </h2>
                 <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-                    Full-Stack Developer
+                    Aspiring Developer
                 </h3>
                 <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
                     I'm a recent master's degree graduate who enjoys Web Development and Machine Learning. Feel free to join me below and send me a message!
